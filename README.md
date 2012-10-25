@@ -9,7 +9,7 @@ Files are parsed using `tail -f` command. Every line is sent to the configured c
 Requirements
 ============
 
-- PHP 5.3.2 and up.
+- PHP 5.3.2 and up with pcntl extension installed.
 - RabbitMQ or ZMQ.
 - tail
 
@@ -31,9 +31,9 @@ Installation
 
 The best way to install is to clone the repository and then configure as you need. See "Configuration" section.
 
-After cloning you must update vendors:
+After cloning you must install dependencies using "composer":
 
-	./update_vendors.sh
+	php composer.phar update
  
 
 Usage
